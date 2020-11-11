@@ -15,7 +15,6 @@ station = Base.classes.station
 
 app = Flask(__name__)
 
-
 #@app.route("/")
 #def home():
 
@@ -33,11 +32,43 @@ def precipitation():
         prcp.append(new_dict)
     return jsonify(prcp)
 
+@app.route('/api/v1.0/stations')
+def stations():
+    session = Session(engine)
+    output = session.query(measurement.station, station.name, station.id).\
+        group_by(station.id).all()
+    session.close()
+
+    stat = []
+    for row in output:
+        new_dict = {}
+        new_dict[row[0]]= row[1]
+        stat.append(new_dict)
+    return jsonify(stat)
+
+@app.route('/api/v1.0/tobs')
+def tobs():
+    session = Session(engine)
+    output = session.query(measurement.date, measurement.tobs, measurement.station).\
+        filter(measurement.date > '2016-08-22').all()
+ #       filter(func.max(func.count(measurement.station))).all()
+    session.close()
+
+    tobs = []
+    for row in output:
+        new_dict = {}
+        new_dict['date']= row[0]
+        new_dict['temp']= row[1]
+        new_dict['station']= row[2]
+        tobs.append(new_dict)
+    return jsonify(tobs)
+
 @app.route('/api/v1.0/<start>')
 def app_start(start):
     session = Session(engine)
     output = session.query(func.min(measurement.tobs), func.max(measurement.tobs), func.avg(measurement.tobs)).\
         filter(measurement.date > start).all()
+        
     session.close
 
     temp = []
