@@ -15,8 +15,17 @@ station = Base.classes.station
 
 app = Flask(__name__)
 
-#@app.route("/")
-#def home():
+@app.route("/")
+def home():
+    """List all available api routes."""
+    return (
+        f"Available Routes: <br/>"
+        f'/api/v1.0/precipitation <br>'
+        f'/api/v1.0/stations<br>'
+        f'/api/v1.0/tobs <br>'
+        f'/api/v1.0/&lt;start> <br>'
+        f'/api/v1.0/&lt;start>/&lt;end> <br>'
+    )
 
 @app.route('/api/v1.0/precipitation')
 def precipitation():
