@@ -38,3 +38,13 @@ Please note in order to run the FLASK api for the dataset, the user will need to
 <h2>Observation and Analysis- Sample Data Queries</h2>
 
 Insert Observation and Analysis
+
+!["Daily Precip Levels"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Daily_Precip_Level.png)
+
+!["Stattion Temp Histogram"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/USC00519281_Histogram_Temp_Observations.png)
+
+!["T-test](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/T-test.png)
+
+!["Trip Average Temp"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Trip_avg_temp.png)
+
+!["Trip Daily Normals"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Daily_normals.png)
