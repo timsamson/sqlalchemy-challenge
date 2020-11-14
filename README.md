@@ -60,4 +60,6 @@ Since the p-value is less than 0.05, (3.90) we can reject the null hypothesis th
 
 <h3>Daily Normals During Trip Duration</h3>
 
+!["Trip Daily Normals Data"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Normals_Trip_Duration_Dataframe.png)
+
 !["Trip Daily Normals"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Daily_normals.png)
