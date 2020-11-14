@@ -37,14 +37,27 @@ Please note in order to run the FLASK api for the dataset, the user will need to
   
 <h2>Observation and Analysis- Sample Data Queries</h2>
 
-Insert Observation and Analysis
+<h3>Precipitation Levels</h3>
 
 !["Daily Precip Levels"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Daily_Precip_Level.png)
 
+<h3>Most Active Station Temperature Histogram</h3>
+
+The most active station for the dataset is 'USC00519281'
+
 !["Stattion Temp Histogram"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/USC00519281_Histogram_Temp_Observations.png)
+
+<h3>T-test June vs. Decemeber</h3>
 
 !["T-test](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/T-test.png)
 
+The plot indicates that there is a meaningful temperature difference between the months of June and Decmeber.
+Since the p-value is less than 0.05, (3.90) we can reject the null hypothesis thus conclude=ing that the difference in means is statistically significant.
+
+<h3>Average Temperature During Trip Duration</h3>
+
 !["Trip Average Temp"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Trip_avg_temp.png)
+
+<h3>Daily Normals During Trip Duration</h3>
 
 !["Trip Daily Normals"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Daily_normals.png)
