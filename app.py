@@ -66,8 +66,6 @@ def tobs():
         filter(measurement.date > '2016-08-22').\
         filter(measurement.station == active_station[0] ).all()
 
-        #filter(func.max(func.count(measurement.station))).all()
-
     session.close()
 
     tobs = []
@@ -111,15 +109,6 @@ def app_start_end(start,end):
         new_dict['tavg']= row[2]
         temp.append(new_dict)
     return jsonify(temp)
-
-
-
-
-
-
-
-
-
 
 if __name__ == "__main__":
     app.run(debug=True)
