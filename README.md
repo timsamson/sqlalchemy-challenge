@@ -35,7 +35,9 @@ Repo contains:
 
 Please note in order to run the FLASK api for the dataset, the user will need to ensure all dependencies are installed in the local environment. Additionally the user should navigate to the folder containing "App.py" and launch terminal. to run use code python app.py . available routes will display on the webpage once the user copes the URL from the terminal into an appropriate web browser.
   
-<h2>Observation and Analysis- Sample Data Queries</h2>
+<h2>Observations and Graphs</h2>
+
+!["Data for Last 365 Days of Dataset"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Describe%20Data%20for%20Preious%20year%20prior%20to%20end%20of%20data.png)
 
 <h3>Precipitation Levels</h3>
 
@@ -55,6 +57,8 @@ The plot indicates that there is a meaningful temperature difference between the
 Since the p-value is less than 0.05, (3.90) we can reject the null hypothesis thus conclude=ing that the difference in means is statistically significant.
 
 <h3>Average Temperature During Trip Duration</h3>
+
+Tmin = 65.0 | Tavg = 72.8108108108108 | Tmax = 79.0
 
 !["Trip Average Temp"](https://github.com/timsamson/sqlalchemy-challenge/blob/main/Images/Trip_avg_temp.png)
 
